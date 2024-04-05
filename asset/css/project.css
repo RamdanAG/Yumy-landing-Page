@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+nav img {
+  max-width: 100px; /* Adjust the width of the logo as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make the navigation items a flex container */
+  justify-content: center; /* Center items horizontally */
+}
+
+nav ul li {
+  margin: 0 10px; /* Add margin between navigation items */
+}
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn3 {
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  background: none;
+  border: white 3px solid;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.header .footer{
+    background-color: black;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+  width: 100%;
+  height: 100vh;
+  background: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  overflow: hidden; /* agar konten lebih panjang bisa di-scroll */
+}
+
+.card .bg{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.card-content{
+  position: relative; /* agar konten content-details bisa di-posisikan relatif terhadap card-content */
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* agar konten di dalam card-content tumpuk satu di atas yang lain */
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.content-details {
+  text-align: center;
+  width:30%;
+  color: white;
+  margin-top: 20px; /* jarak antara logo dan deskripsi */
+}
+
+.content-details p {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 10px; /* jarak antara deskripsi dan tombol */
+
+}
+
+.button-container button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff;
+  color: cadetblue;
+  cursor: pointer;
+}
+
+button{
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  background: none;
+  border: white 3px solid;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover{
+  background: white;
+  border: white 3px solid;
+  color: rgb(0, 0, 0);
+}
+p{
+  font-family: "Poppins", sans-serif;
+}
+
+.dots-container {
+  position: fixed;
+  top: 50%;
+  right: 30px; /* Mengatur jarak dari sisi kanan */
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: white 1px solid;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/* SECTION 2 */
+
+.section2{
+  width: 100%;
+  height: 20vh;
+  background-color: #FFAF45;
+}
+
+.footer{
+  text-align: center;
+  padding-top: 2em;
+  font-family: "Poppins", sans-serif;
+}
+a{
+  color: rgb(5, 5, 5);
+}
+/* SECTION 2 */
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }

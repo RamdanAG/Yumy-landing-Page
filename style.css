@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    background-color: #FB6D48;
+    width: 100%;
+    height: 100vh;
+}
+
+.awan-heading{
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    top: 84%;
+    left:10%;
+    animation-duration: 5s; /* Ubah durasi sesuai kebutuhan */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 200px;
+}
+
+.awan-heading2{
+    position: relative;
+    position: absolute;
+    top: 20%;
+    left:10%;
+    animation-duration: 20s; /* Ubah durasi sesuai kebutuhan */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 200px;
+}
+
+.animate-left {
+    animation-name: slideLeft;
+}
+.animate-right {
+    animation-name: slideRight;
+}
+@keyframes slideLeft {
+    0% { left: 30%; }
+    50% { left: 50%; }
+    100% { left: 30%; }
+}
+@keyframes slideRight {
+    0% { left: 10%; }
+    50% { left: 40%; }
+    100% { left: 10%; }
+}
+
+
+nav {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen-elemen secara merata */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+}
+
+nav img {
+    float: right; /* Logo diatur di sebelah kanan */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Pusatkan daftar navigasi */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.btn3 {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;;
+    background-color: white;
+    border: white 3px solid;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    color: #e76f51;
+}
+
+
+.logo {
+    position: absolute;
+    z-index: 1;
+    height: 30em;
+    right: 14em;
+    float: right;
+    top: 16em;
+}
+
+.imgh {
+    position: absolute;
+    display: block;
+    height: 35em;
+    margin: auto;
+    top: 15em;
+    right: 10em;
+    animation: putar 4s linear infinite;
+    z-index: 0; /* Pastikan gambar latar belakang berada di bawah gambar logo */
+}
+
+@keyframes putar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.box-heading-text{
+    height: 30em;
+    width: 40em;
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 12em;
+    right: 25em;
+}
+
+.box-heading-text h1{
+    font-size:3.5em;
+    font-family: "Dela Gothic One", sans-serif;
+    color: white;
+    line-height: 1;
+}
+
+.box-heading-text h6{
+    font-size:1.5em;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+.box-heading-text p{
+    text-align: justify;
+    margin-top: 1em;
+    font-size:1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.btn-grup {
+    display: flex;
+    margin-top: 1em;
+}
+
+.btn1,
+.btn2 {
+    margin-left: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 14px 32px;
+    border: solid 4px;
+    box-shadow: rgb(0, 0, 0) -3px 3px 28px -8px;
+    border-radius: 50px;
+    transition: 1000ms;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.btn1 {
+    background: linear-gradient(90deg, #e76f51 0%, #e76f51 100%);
+    border-color: #d62828;
+}
+
+.btn2 {
+    background: linear-gradient(90deg, #48cae4 0%, #48cae4 100%);
+    border-color: #0096c7;
+}
+
+.btn1:hover,
+.btn2:hover {
+    padding: 10px 50px;
+    transform: translateY(-0px);
+}
+
+.btn1:hover {
+    background: linear-gradient(90deg, #e76f51 0%, #e76f51 100%);
+    color: #d62828;
+}
+
+.btn2:hover {
+    background: linear-gradient(90deg, #48cae4 0%, #48cae4 100%);
+    color: #0096c7;
+}
+
+/* SECTION 2 */
+
+.section2{
+    width: 100%;
+    height: 20vh;
+    background-color: #FFAF45;
+}
+
+.footer{
+    text-align: center;
+    padding-top: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+/* SECTION 2 */
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
